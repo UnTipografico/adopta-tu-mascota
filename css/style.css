@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+}
+:root{
+    --colorPurpura: #4760E7;
+    --colorPurpuraPalido: #DFDAFF;
+    --colorNaranjo: #FF9040;
+    --colorAzulOscuro: #102C96;
+    --colorBlanco: #fff;
+}
+h1, h2, h3, h4, h5{
+    font-family: 'Carter One', cursive;
+    color: var(--colorAzulOscuro);
+}
+p{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    color: var(--colorAzulOscuro);
+}
+
+.navbar-background{
+    background-color: var(--colorPurpura);
+}
+
+.btn-primary{
+    background-color: var(--colorNaranjo);
+    border-color: var(--colorNaranjo);
+    border-radius: 100px;
+}
+.btn-secondary{
+    background-color: var(--colorPurpura);
+    border-color: var(--colorPurpura);
+    border-radius: 100px;
+}
+.sliderHome{
+    position: relative;
+    margin-bottom: 100px;
+}
+.slider{
+    background-image: url(../img/fondo-slider.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    padding: 70px 0 !important;
+}
+
+.imagen-carrusel img{
+    width: 420px;
+    height: auto;
+}
+
+.slider .contenido {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 120px;
+}
+.slider h2{
+    font-size: 2.5rem;
+    color: var(--colorAzulOscuro);
+    margin-bottom: 24px;
+}
+.flex-control-nav{
+    bottom: 20px;
+}
+.flex-control-paging li a.flex-active{
+    background-color: var(--colorAzulOscuro);
+    opacity: 1;
+}
+.flex-control-paging li a{
+    background-color: var(--colorAzulOscuro);
+    opacity: .5;
+}
+.flex-direction-nav{
+    display: none;
+}
+.tuAyuda{
+    margin-bottom: 100px;
+}
+.cardGroup{
+    margin-top: 50px;
+}
+.card{
+    padding: 10px;
+    border-radius: 20px;
+    border-color: var(--colorPurpuraPalido);
+    transition: all ease-in-out .2s;
+}
+.card-body{
+    display: flex;
+    gap: 27px;
+    align-items: center;
+}
+.card:hover{
+    background: var(--colorPurpuraPalido);
+
+}
+.card-body .btn-primary{
+    width: 200px;
+}
+.fecha{
+    background: var(--colorPurpura);
+    color: var(--colorBlanco);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 127px;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 70px;
+    line-height: 30px;
+}
+.fecha span{
+    display: block;
+    font-size: 1rem;
+    font-weight: lighter;
+    position: relative;
+    top: -4px;
+}
+.nosotros{
+    padding: 100px 0 0;
+}
+.btnVerMas{
+    display: block;
+    margin: 0 auto;
+    width: max-content;
+}
+.video{
+    border-radius: 20px;
+    margin-top: 55px;
+    position: relative;
+    z-index: 9;
+}
+.form-control{
+    border-radius: 100px;
+    padding: 10px 20px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    border-color: var(--colorPurpura);
+}
+input[type="text"]::placeholder{
+    color: var(--colorPurpura);
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+.formulario{
+    background: url(../img/perrito.png)  #F5FBFE no-repeat center bottom;
+    padding: 130px 0 200px;
+    position: relative;
+    top: 50px;
+}
+.formulario .contenido{
+    max-width: 390px;
+    width: 100%;
+    margin: 0 auto;
+}
+.newsletter{
+    background-image: url(../img/fondo-newsletter.png);
+    background-position: top;
+    position: relative;
+    bottom: -30px;
+    padding: 100px 0;
+}
+.newsletter .form-group{
+    position: relative;
+}
+.newsletter .btn-secondary{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 44px;
+    width: 150px;
+}
+.newsletter .form-control{
+    border: 0;
+}
+.form{
+    max-width: 430px;
+    width: 100%;
+    margin: 0 auto;
+}
+footer{
+    padding: 70px 0;
+    position: relative;
+    bottom: -12px;
+    background: url(../img/fondo-footer.png) no-repeat;
+}
+.botones{
+    margin: 30px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.infoFooter{
+    text-align: center;
+    color: #fff;
+    display: block;
+}
+.calendarioActividades{
+    background: url(../img/fondo-calendario.svg) no-repeat top center;
+    background-size: cover;
+    padding: 110px 0;
+}
+.opcionAyuda{
+    transition: all ease-in-out .3s;
+}
+.opcionAyuda:hover{
+    transform: translatey(-20px);
+
+}
+.btnAdopta{
+    display: none;
+}
+
+
+@media screen and (max-width: 1200px){
+    .btnAdopta{
+        display: block;
+    }
+    .botonMenu{
+        display: flex;
+        gap: 20px;
+    }
+    .navbar-nav .btn-primary{
+        display: none;
+    }
+}
+@media screen and (max-width: 992px){
+    .slider .contenido {
+        display: grid;
+        justify-items: center;
+        gap: 30px;
+        max-width: 500px;
+        width: 90%;
+    }
+    .slider .texto{
+        display: grid;
+        justify-items: center;
+    }
+    .slider .texto p,
+    .slider h2{
+        text-align: center;
+    }
+    .slider .contenido img{
+        width: 200px;
+        grid-row-start: 1;
+    }
+    .opcionAyuda img{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .card-body {
+        display: grid;
+        gap: 27px;
+        grid-template-columns: 70px 1fr;
+        align-items: flex-start;
+    }
+    .cardGroup{
+        padding: 0 20px;
+    }
+    .nosotros {
+        padding: 0 20px;
+    }
+    .fecha{
+        width: 70px;
+    }
+    .formulario{
+        padding: 50px 0 200px;
+    }
+    .formulario .contenido h2,
+    .formulario .contenido p{
+        text-align: center;
+    }
+    .video{
+        height: 300px;
+    }
+    .botones{
+        display: grid;
+    }
+    .calendarioActividades{
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    footer{
+        background-size: cover;
+    }
+    .opcionAyuda img{
+        width: 150px;
+    }
+
+}
